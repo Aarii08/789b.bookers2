@@ -7,7 +7,6 @@ class UsersController < ApplicationController
     @books = @user.books
     @book = Book.new
     # 投稿数用
-    # @book_num = @user.books.page(params[:page]).reverse_order
     @today_book = @books.created_today
     @yesterday_book = @books.created_yesterday
     @this_week_book = @books.created_this_week
